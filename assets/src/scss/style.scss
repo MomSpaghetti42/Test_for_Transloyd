@@ -1,0 +1,130 @@
+body{
+	margin: 0;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.search-block{
+	margin-top: 130px;
+	position: relative;
+	input{
+		border-radius: 5px;
+		line-height: 28px;
+	}
+	.users-block{
+		display: flex;
+		width: 700px;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-top: 20px;
+		border-radius: 5px;
+		border: 1px solid black;
+		padding: 5px;
+	}
+	#users{
+		background-color: #ffffff;
+		position: absolute;
+		top: 20px;
+		z-index: 999999;
+	}
+}
+
+.user-card{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 50px;
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	img{
+		height: 50px;
+		width: 50px;
+		border-radius: 5px;
+	}
+	span{
+		margin-left: 10px;
+	}
+	&:hover{
+		background-color: #def7f6;
+	}
+}
+
+.user-profile{
+	display: flex;
+	justify-content: space-between;
+	width: 700px;
+	border-radius: 20px;
+	border: 1px solid black;
+	padding: 20px;
+	margin-top: 20px;
+	.user-profile__card{
+		display: flex;
+	}
+	img{
+		height: 100px;
+		width: 100px;
+		border-radius: 10px;
+	}
+	.user-profile__info{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: 20px;
+	}
+	.user-profile__repositories{
+		display: flex;
+		flex-direction: column;
+		height: 200px;
+		overflow-y: auto;
+	}
+	.login{
+		font-size: 2em;
+	}
+}
+
+.repos-card{
+	display: flex;
+	flex-direction: column; 
+	justify-content: space-around;
+	min-height: 50px;
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	&:hover{
+		background-color: #def7f6;
+	}
+}
+
+.repos{
+	display: flex;
+	flex-direction: column; 
+	justify-content: space-between;
+	width: 700px;
+	border-radius: 20px;
+	border: 1px solid black;
+	padding: 20px;
+	margin-top: 20px;
+	span{
+		line-height: 1.5em;
+	}
+	.repos__name{
+		font-size: 2em;
+	}
+	.repos__issues{
+		display: flex;
+		justify-content: space-between;
+		width: 150px;
+	}
+}
+
+
